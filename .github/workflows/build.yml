@@ -3,11 +3,11 @@ name: master
 on:
   push:
     branches:
-    - master
+    - actions-tests
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     
     steps:
     - uses: actions/checkout@master
