@@ -22,7 +22,7 @@ jobs:
         dotnet build src/MIDTesters.Core/MIDTesters.Core.csproj
         dotnet test src/MIDTesters.Core/MIDTesters.Core.csproj
     - name: NuGet setup
-      uses: Rickedb/Setup-Nuget@v2
+      uses: Rickedb/Setup-Nuget@v2-release
     - name: Publish NuGet Package
       run: |
         dotnet build src/OpenProtocolInterpreter/OpenProtocolInterpreter.csproj --configuration release
